@@ -1,11 +1,12 @@
-# Paysera Commission task skeleton
+# Kristian Dragnev Task
 
-Following steps:
-- don't forget to change `Paysera` namespace and package name in `composer.json`
- to your own, as `Paysera` keyword should not be used anywhere in your task;
-- `\Paysera\CommissionTask\Service\Math` is an example class provided for the skeleton and could or could not be used by your preference;
-- needed scripts could be found inside `composer.json`;
-- before submitting the task make sure that all the scripts pass (`composer run test` in particular);
-- this file should be updated before submitting the task with the documentation on how to run your program.
+Follow the steps:
+- clone this project
+- run `composer install`
+- run `php script.php`
+- run `composer run test`
 
-Good luck! :) 
+The 7th row has 0.69 value because I round the commission at the very end which I think is the correct way. That way we don't have a loss of data, amirite. 
+The last row is slightly different because of the fluctuating rates of EUR to JPY. 
+
+If you have questions or constructive criticism please share with me on kristian9107@gmail.com

@@ -14,10 +14,7 @@
         while (($input = fgetcsv($handle, 0, ",")) !== FALSE) {
             try {
                 $calculation = new Calculator(...$input);
-                print("<pre>");
-                print_r($calculation->getCalculatedCommission());
-                print("</pre>");
-                print("<hr/>");
+                echo ($calculation->getCalculatedCommission()) . "\n";
             } catch (Exception $e) {
                 echo $e;
             }
